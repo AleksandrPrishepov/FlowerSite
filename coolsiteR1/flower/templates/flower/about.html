@@ -1,0 +1,14 @@
+{% extends 'flower/base.html' %}
+
+{% block content %}
+<h1>{{title}}:</h1>
+
+<img src="media/photo/not db/Alexsandr.jpg" width="150" height="200"  alt="альтернативный текст">
+<p>Здравствуйте, меня зовут Александр и я создатель этого сайта.
+        Цель этого сайта, показать навыки, которые я преобрел в процессе обучения.</p>
+<p>Hard skils:</p>
+{% for i in hard_skils %}
+<li>{{i}}</li>
+{% endfor %}
+
+{% endblock %}

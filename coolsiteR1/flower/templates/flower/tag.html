@@ -1,0 +1,8 @@
+{% for i in cats %}
+			{% if cat_selected == i.pk %}
+				<li class="selected">{{i.n_cat}}</li>
+			{% else %}
+				<li><a href="{{i.get_absolute_url}}">{{i.n_cat}}</a></li>
+			{% endif %}
+{% endfor %}
+
